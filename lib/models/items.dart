@@ -2,8 +2,10 @@
 class Item{
   int id;
   String iName;
-  String iprice;
+  double iPrice;
   String iDescription;
 
-  Item(this.id, this.iName, this.iprice, this.iDescription);
+  Item({this.id, this.iName, this.iPrice, this.iDescription});
 }
+
+

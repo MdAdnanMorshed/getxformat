@@ -6,6 +6,7 @@ class ShoppingController extends GetxController {
 
   var items=List<Item>().obs;
 
+
   @override
   void onInit() {
     fetchItems();
@@ -20,9 +21,8 @@ class ShoppingController extends GetxController {
     Item(id: 1,iName:'itemName 4',iPrice:70,iDescription: 'itemDescription 04',),
     Item(id: 1,iName:'itemName 5',iPrice:90,iDescription: 'itemDescription 05',),
    ];
+   items.value=itemsResponse;
   }
-
-
 
 }
 
